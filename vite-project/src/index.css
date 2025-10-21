@@ -5,6 +5,12 @@ body{
    font-optical-sizing: auto;
 }
 
+.body{
+  background-color: #e0e0e0;
+}
+
+
+
 .text-prata{
   font-family: "Prata", serif;
   font-weight: 400;
@@ -17,5 +23,9 @@ body{
 
 .bg_primary{
     color: #ff5252;
+}
+
+.body-primary{
+  background-color: #f5f0f0;
 }
 

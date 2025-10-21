@@ -1,15 +1,16 @@
+import Container from "@mui/material/Container";
 import React from "react";
 import { Link } from "react-router";
 
 const Header = () => {
   return (
     <header>
-      <div className="top-strip py-2 text-[14px] text-gray-500 border-t border-b border-gray-400">
-        <div className="flex items-center justify-between">
+      {/* <Container> */}
+        <div className="flex items-center  md:justify-between ">
           <div className="flex-1">
-            <p className="">Get up to 50% off new season styles, limited time only</p>
+            <p className="text-center md:text-start">Get up to 50% off new season styles, limited time only</p>
           </div>
-          <div className="flex-1 flex items-center justify-end">
+          <div className="flex-1 hidden md:flex items-center justify-end">
             <ul className="flex gap-3">
                 <li>
                     <Link className="hover:text-[#ff5252] transition-colors duration-300 ease-in-out" to={"/"}>Track Order</Link>
@@ -21,7 +22,7 @@ const Header = () => {
           </div>
         </div>
         
-      </div>
+      {/* </Container> */}
     </header>
   );
 };
