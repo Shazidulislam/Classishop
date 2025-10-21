@@ -10,7 +10,6 @@ const Rootlayout = () => {
     <div>
       {/* <header className="w-full"> */}
       <header>
-        {/* header */}
         <div className=" py-2 px-2 text-[14px] text-gray-500 border-t-2 border-b-2 border-gray-200">
           <Container>
             <Header />
@@ -30,11 +29,8 @@ const Rootlayout = () => {
         </div>
       </header>
 
-      {/* </header> */}
       <main>
-        <Container>
-          <Outlet />
-        </Container>
+        <Outlet />
       </main>
       <footer></footer>
     </div>

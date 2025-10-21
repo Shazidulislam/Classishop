@@ -13,7 +13,7 @@ const SubMenu = () => {
           Women
         </Link>
 
-        {/* 🔴 submenu — visible only when hover on Women */}
+        {/*submenu — visible only when hover on Women */}
         <div className="absolute top-0 left-full  w-40 bg-white shadow-lg rounded-md py-2 mt-4 opacity-0 invisible group-hover/women:opacity-100 group-hover/women:visible transition-all duration-300">
           <ul>
             <li>
