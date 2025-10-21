@@ -52,7 +52,7 @@ const Navigation = () => {
                 </Link>
                 {/* sub menu for elictronics */}
                 <div>
-                    <SubMenuElictrnics/>
+                  <SubMenuElictrnics />
                 </div>
               </li>
               <li className="relative group">
@@ -61,7 +61,7 @@ const Navigation = () => {
                 </Link>
                 {/* submenu for Footware */}
                 <div>
-                    <SubMenuFootware/>
+                  <SubMenuFootware />
                 </div>
               </li>
               <li>
@@ -104,7 +104,7 @@ const Navigation = () => {
       {/* sidebar  component */}
 
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-30 transition-transform duration-300 ${
+        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -114,7 +114,7 @@ const Navigation = () => {
       {open && (
         <div
           onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-10"
         ></div>
       )}
     </>

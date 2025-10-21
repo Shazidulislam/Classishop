@@ -8,7 +8,7 @@ import { GrSubtract } from "react-icons/gr";
 const CategoryPanale = ({setOpen}) => {
    
   return (
-    <div className=" ">
+    <div className=" z-50">
       <div className="py-3 px-3">
         <Link to={"/"} className="w-[25%] cursor-pointer ">
           <img className="w-40 " src={logo} alt="logo-img" />

@@ -9,7 +9,12 @@ body{
   background-color: #e0e0e0;
 }
 
-
+::-webkit-scrollbar{
+  width:5px !important; 
+  height: 2px !important;
+}
+::-webkit-scrollbar-thumb{background-color: #ff5252;}
+::-webkit-scrollbar-track{background: #fff;}
 
 .text-prata{
   font-family: "Prata", serif;
