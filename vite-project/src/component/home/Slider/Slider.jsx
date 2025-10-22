@@ -12,7 +12,7 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 
 const Slider = () => {
   return (
-    <div className="py-10 bg-white">
+    <div className="pb-10  bg-white">
       <div className="px-10">
         <ShipingBox />
       </div>

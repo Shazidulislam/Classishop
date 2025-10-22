@@ -46,11 +46,11 @@ const Banner = () => {
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <div className="swiper-button-prev absolute ml-4 top-1/2 left-0 transform -translate-y-1/2 bg-white rounded-full p-2 z-10">
-      <RiArrowLeftSLine size={24} className=""/>
+      <div className="swiper-button-prev absolute ml-4 top-1/2 left-0 transform -translate-y-1/2 hover:bg-[#ff5252] bg-white rounded-full p-2 z-10">
+      <RiArrowLeftSLine size={24} className="text-black hover:text-white"/>
       </div>
-      <div className="swiper-button-next absolute top-1/2 mr-4 right-0 transform -translate-y-1/2 bg-white rounded-full p-2 z-10">
-       <RiArrowRightSLine size={24}/>
+      <div className="swiper-button-next absolute top-1/2 mr-4 right-0 transform -translate-y-1/2 bg-white rounded-full p-2 z-10 hover:bg-[#ff5252]">
+       <RiArrowRightSLine size={24} className="text-black  hover:text-white"/>
       </div>
     </div>
   );

@@ -1,77 +1,111 @@
-import React from "react";
+import React, { useRef } from "react";
 import Nav from "./Nav";
 import ProductBox from "../../gobal/ProductBox/ProductBox";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+// Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+
+// Icons
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+
 const ProductSlider = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
-    <div className="py-10">
-      {/* navigation */}
+    <div className="py-10 ">
+      {/* Top nav section */}
       <Nav />
-      {/* Popular Product */}
-      <div className="py-6">
-                 <Swiper
-        slidesPerView={6}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        <SwiperSlide>
-               <ProductBox/>
-        </SwiperSlide>
-        
-      </Swiper>
-      
+
+      {/* Swiper container */}
+      <div className="py-6 relative ">
+        {/* Left arrow */}
+        <button
+          ref={prevRef}
+          className="swiper-button-prev absolute  top-1/2 left-0 transform -translate-y-1/2 hover:bg-[#ff5252] bg-white rounded-full p-2 z-10"
+        >
+         <RiArrowLeftSLine size={24} className="text-black hover:text-white"/>
+        </button>
+
+        {/* Right arrow */}
+        <button
+          ref={nextRef}
+          className="swiper-button-next absolute top-1/2  right-0 transform -translate-y-1/2 bg-white rounded-full p-2 z-10 hover:bg-[#ff5252]"
+        >
+                <RiArrowRightSLine size={24} className="text-black  hover:text-white"/>
+         
+        </button>
+
+        {/* Swiper */}
+        <Swiper 
+          slidesPerView={6}
+          spaceBetween={10}
+          modules={[Navigation]}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+          }}
+          className=""
+        >
+         <SwiperSlide className="mb-4" >
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+         <SwiperSlide>
+              <ProductBox/>
+         </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

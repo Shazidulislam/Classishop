@@ -4,6 +4,8 @@ import Container from "@mui/material/Container";
 import Category from "../../component/home/Category/Category";
 import Slider from "../../component/home/Slider/Slider";
 import ProductSlider from "../../component/home/ProductSlider/ProductSlider";
+import LatestProducts from "../../component/home/LatestProducts/LatestProducts";
+import FeaturedProducts from "../../component/home/FeaturedProducts/FeaturedProducts";
 
 const Home = () => {
   return (
@@ -27,6 +29,8 @@ const Home = () => {
         {/* slider under the  */}
         <Container maxWidth={false}>
           <Slider></Slider>
+          <LatestProducts/>
+          <FeaturedProducts/>
         </Container>
       </div>
     </div>
