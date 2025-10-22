@@ -7,8 +7,7 @@ import sliderFour from "../../../assets/images/slider/slider_4.jpg";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { RiArrowRightSLine } from "react-icons/ri";
-import { RiArrowLeftSLine } from "react-icons/ri";
+
 
 const Slider = () => {
   return (
