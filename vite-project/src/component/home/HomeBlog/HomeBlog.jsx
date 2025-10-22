@@ -12,7 +12,7 @@ const HomeBlog = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <div className="pb-10">
+    <div className="pb-3">
       <div>
         <Title title={"From The Blog"}></Title>
       </div>

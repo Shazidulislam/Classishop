@@ -8,6 +8,7 @@ import LatestProducts from "../../component/home/LatestProducts/LatestProducts";
 import FeaturedProducts from "../../component/home/FeaturedProducts/FeaturedProducts";
 import Addvaites from "../../component/home/Addvaites/Addvaites";
 import HomeBlog from "../../component/home/HomeBlog/HomeBlog";
+import Requerments from "../../component/home/Requerments/Requerments";
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
           {/* blog */}
           <HomeBlog></HomeBlog>
           {/*  */}
+         
         </Container>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Container from "../../component/gobal/Container/Container";
 import Header from "../../component/Header/Header";
 import Navbar from "../../component/gobal/Navbar/Navbar";
 import Navigation from "../../component/gobal/Navbar/Navigation";
+import Footer from "../../component/Footer/Footer";
 
 const Rootlayout = () => {
   return (
@@ -32,7 +33,9 @@ const Rootlayout = () => {
       <main>
         <Outlet />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 };
