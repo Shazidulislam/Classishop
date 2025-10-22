@@ -1,12 +1,10 @@
-import React from "react";
-import logo from "../../../assets/images/logo.svg";
+import logo from "../../../assets/images/logo/logo.jpg";
 import Search from "./Search";
 import { Link } from "react-router";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline, IoGitCompareOutline } from "react-icons/io5";
 import BasicTooltip from "../BasicTooltip/BasicTooltip";
-import Container from "@mui/material/Container";
-import Navigation from "./Navigation";
+
 
 const Navbar = () => {
   return (

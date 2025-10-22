@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../../component/home/Banner/Banner";
 import Container from "@mui/material/Container";
 import Category from "../../component/home/Category/Category";
+import Slider from "../../component/home/Slider/Slider";
 
 const Home = () => {
   return (
@@ -16,6 +17,14 @@ const Home = () => {
         <Container maxWidth={false} >
           <Category/>
         </Container>
+       
+      </div>
+
+      <div>
+          {/* slider under the  */}
+          <Container maxWidth={false}>
+            <Slider></Slider>
+          </Container>
       </div>
     </div>
   );

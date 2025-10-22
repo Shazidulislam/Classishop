@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import logo from "../../../assets/images/logo.svg";
+import logo from "../../../assets/images/logo/logo.jpg";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import { FaRegPlusSquare } from "react-icons/fa";
