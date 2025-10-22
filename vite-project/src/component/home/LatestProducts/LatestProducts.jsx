@@ -10,13 +10,14 @@ import "swiper/css/navigation";
 
 // Icons
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import Title from "../../gobal/Title/Title";
 
 const LatestProducts = () => {
       const prevRef = useRef(null);
       const nextRef = useRef(null);
     return (
         <div className='pb-10 '>
-            <h1 className="text-2xl font-medium text-gray-800">Latest Products</h1>
+            <Title title={"Latest Products"}></Title>
             {/* latest product  */}
              {/* Swiper container */}
                   <div className="py-6 relative ">
