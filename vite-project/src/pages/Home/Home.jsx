@@ -7,6 +7,7 @@ import ProductSlider from "../../component/home/ProductSlider/ProductSlider";
 import LatestProducts from "../../component/home/LatestProducts/LatestProducts";
 import FeaturedProducts from "../../component/home/FeaturedProducts/FeaturedProducts";
 import Addvaites from "../../component/home/Addvaites/Addvaites";
+import HomeBlog from "../../component/home/HomeBlog/HomeBlog";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
           <Category />
         </Container>
       </div>
-
+         {/* popular product section */}
       <Container maxWidth={false}>
         <ProductSlider />
       </Container>
@@ -29,10 +30,17 @@ const Home = () => {
       <div>
         {/* slider under the  */}
         <Container maxWidth={false}>
+          {/* slider with shiping section */}
           <Slider></Slider>
+          {/* latest product */}
           <LatestProducts/>
+          {/* feture product */}
           <FeaturedProducts/>
+          {/* add vaites of product */}
           <Addvaites/>
+          {/* blog */}
+          <HomeBlog></HomeBlog>
+          {/*  */}
         </Container>
       </div>
     </div>

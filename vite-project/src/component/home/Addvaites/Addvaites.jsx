@@ -29,7 +29,7 @@ const Addvaites = () => {
             <img src={slider_1} alt="" className="rounded-md " />
           </Link>
         </SwiperSlide>
-         <SwiperSlide>
+        <SwiperSlide>
           <Link to={"/"}>
             <img src={slider_4} alt="" className="rounded-md" />
           </Link>
@@ -44,7 +44,6 @@ const Addvaites = () => {
             <img src={slider_3} alt="" className="rounded-md" />
           </Link>
         </SwiperSlide>
-       
       </Swiper>
     </div>
   );
