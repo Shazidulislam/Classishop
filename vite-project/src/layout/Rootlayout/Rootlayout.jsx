@@ -9,7 +9,7 @@ const Rootlayout = () => {
   return (
     <div>
       {/* <header className="w-full"> */}
-      <header>
+      <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
         <div className=" py-2 px-2 text-[14px] text-gray-500 border-t-2 border-b-2 border-gray-200">
           <Container>
             <Header />

@@ -17,7 +17,7 @@ const Slider = () => {
         <ShipingBox />
       </div>
       {/* slider */}
-      <div className=" py-10">
+      <div className=" pt-10">
         <Swiper
           modules={[Navigation]}
           spaceBetween={20}

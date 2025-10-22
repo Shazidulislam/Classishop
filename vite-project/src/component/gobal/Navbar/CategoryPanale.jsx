@@ -3,7 +3,7 @@ import logo from "../../../assets/images/logo/logo.jpg";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import { FaRegPlusSquare } from "react-icons/fa";
-import { GrSubtract } from "react-icons/gr";
+
 
 const CategoryPanale = ({setOpen}) => {
    
