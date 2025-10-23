@@ -10,7 +10,7 @@ import { MdOutlineHeadsetMic } from "react-icons/md";
 const Requerments = () => {
   return (
     <Container maxWidth={false}>
-      <div className="grid grid-cols-5 gap-2 w-[80%] pb-10 mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-2 w-[80%] pb-10 mx-auto">
         {/* item-1 */}
         <div className="flex flex-col justify-center items-center gap-3 group">
           <LiaShippingFastSolid
