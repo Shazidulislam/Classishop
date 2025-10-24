@@ -34,3 +34,16 @@ body{
   background-color: #f5f0f0;
 }
 
+
+.homeBannerV2 .swiper-slide-active .info{right:0px !important; opacity: 1;}
+.homeBannerV2 .swiper-slide-active .info h1{right:0px !important; opacity: 1;}
+.homeBannerV2 .swiper-slide-active .info h2{right:0px !important; opacity: 1;}
+.homeBannerV2 .swiper-slide-active .info h3{right:0px !important; opacity: 1;}
+.homeBannerV2 .swiper-slide-active .info .btn{right:0px !important; opacity: 1;}
+
+
+.homeBannerV2 .info h1{transition-duration: 1.2s;}
+.homeBannerV2 .info h2{transition-duration: 1.5s;}
+.homeBannerV2 .info h3{transition-duration: 1.4s;}
+.homeBannerV2 .info  .btn{transition-duration: 1.6s;}
+

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Rating } from "@mui/material";
+import {  Rating } from "@mui/material";
 import popular from "../../../assets/images/slider/popular_p.jpg"
 import { IoCartOutline } from "react-icons/io5";
 import { MdZoomOutMap } from "react-icons/md";
@@ -35,7 +35,7 @@ const ProductBox = () => {
       <div className="mt-2 px-4">
         <Rating
           name="read-only"
-          value={20}
+          value={4}
           precision={0.5}
           readOnly
           size="small"

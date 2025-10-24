@@ -16,7 +16,7 @@ const ProductSlider = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="py-10 ">
+    <div className="pt-10 ">
       {/* Top nav section */}
       <Nav />
 

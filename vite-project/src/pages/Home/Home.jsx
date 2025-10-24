@@ -9,6 +9,7 @@ import FeaturedProducts from "../../component/home/FeaturedProducts/FeaturedProd
 import Addvaites from "../../component/home/Addvaites/Addvaites";
 import HomeBlog from "../../component/home/HomeBlog/HomeBlog";
 import Requerments from "../../component/home/Requerments/Requerments";
+import BannerV2 from "../../component/home/BannerV2/BannerV2";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
          {/* popular product section */}
       <Container maxWidth={false}>
         <ProductSlider />
+        <BannerV2/>
       </Container>
 
       <div>

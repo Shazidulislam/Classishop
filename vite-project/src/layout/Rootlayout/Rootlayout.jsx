@@ -30,11 +30,13 @@ const Rootlayout = () => {
         </div>
       </header>
 
-      <main>
-        <Outlet />
+      <main className="mt-44">
+        <Container>
+          <Outlet />
+        </Container>
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );
