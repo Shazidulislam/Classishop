@@ -43,18 +43,16 @@ const Slider = () => {
           </SwiperSlide>
           {/* slider_2 */}
           <SwiperSlide className="relative">
-           
               <img src={sliderTow} alt="Banner 1" className="rounded-xl " />
-              <div className="z-10 absolute left-32 w-full top-10  space-y-2">
+              <div className="z-10 absolute left-28 w-full top-10  space-y-2">
                 <h1 className="text-xl font-medium text-gray-700 w-[70%]">
-                  Bey's Womens Bags With Low Price!
+                  Bey's Womens  With Low Price!
                 </h1>
                 <p className="text-3xl font-medium text-[#ff5252]">$99</p>
                 <p className="text-2xl text-gray-700 font-medium hover:text-[#ff5252] hover:underline">
                   Shop Now
                 </p>
               </div>
-            
           </SwiperSlide>
           {/* slider_3 */}
           <SwiperSlide>
